@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rick and Morty</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://lh3.googleusercontent.com/fXQVXTma1ENwAFjsxJ4IT6GntBr3RxWP3HMSLbNdvycl-0tscOQEeJIEAmehcNOt5hCp=s180-rw"
+    />
+  </head>
+  <body>
+    <div class="container_ppal">
+      <div class="menu">
+        <div>
+          <img
+            src="https://lh3.googleusercontent.com/fXQVXTma1ENwAFjsxJ4IT6GntBr3RxWP3HMSLbNdvycl-0tscOQEeJIEAmehcNOt5hCp=s180-rw"
+            width="50"
+            height="50"
+          />
+          <span>Rick and Morty</span>
+        </div>
+        <div class="menu__burger">
+          <input type="checkbox" />
+          <i class="fas fa-bars"></i>
+          <i class="fas fa-times"></i>
+          <nav class="navigation">
+            <ul>
+              <a href="#inicio">Inicio</a>
+              <a href="#productos">Catálogo</a>
+              <a href="#contacto">Contactame</a>
+            </ul>
+          </nav>
+        </div>
+        <nav class="navigation">
+          <ul class="menu__opciones">
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Personajes</a>
+            <a href="#contacto">Contacto</a>
+          </ul>
+        </nav>
+      </div>
+      <div class="main">
+        <section id="inicio" class="inicio">
+          <img class="imagen-base" src="img/logo.png" alt="Imagen Base" />
+          <img
+            class="imagen-superpuesta"
+            src="/img/adult-swim1.webp"
+            alt="Imagen Superpuesta"
+          />
+        </section>
+        <section id="productos" class="productos">
+          <h3>Personajes</h3>
+          <div class="listado">
+            <div class="ficha-producto bottom">
+              <img src="./img/Rick.jpg" alt="Rick" />
+              <div style="width: 100%">
+                <h1>Rick Sanchez</h1>
+                <p class="btn">
+                  "Es un viejo científico alcohólico que hablar de manera
+                  vulgar."
+                </p>
+              </div>
+            </div>
+            <div class="ficha-producto bottom">
+              <img src="./img/Morty.png" alt="Rick" />
+              <div style="width: 100%">
+                <h1>Morty Smith</h1>
+                <p class="btn">
+                  "Un adolescente aventurero, nieto de Rick, curioso e ingenuo."
+                </p>
+              </div>
+            </div>
+            <div class="ficha-producto bottom">
+              <img src="./img/Beth_Smith.png" alt="Auto" />
+              <div style="width: 100%">
+                <h1>Beth Smith</h1>
+                <p class="btn">
+                  "La hija independiente de Rick, cirujana veterinaria y madre
+                  decidida"
+                </p>
+              </div>
+            </div>
+            <div class="ficha-producto bottom">
+              <img src="./img/Jerry_Smith.png" alt="Auto" />
+              <div style="width: 100%">
+                <h1>Jerry Smith</h1>
+                <p class="btn">
+                  "Es el inseguro y desempleado esposo de Beth en la serie."
+                </p>
+              </div>
+            </div>
+            <div class="ficha-producto bottom">
+              <img src="./img/unidad.png" alt="Auto" />
+              <div style="width: 70%">
+                <h1>Unidad</h1>
+                <p class="btn">
+                  "Es una entidad que busca comprender la humanidad."
+                </p>
+              </div>
+            </div>
+            <div class="ficha-producto bottom">
+              <img src="./img/Meeseeks.png" alt="Auto" />
+              <div style="width: 100%">
+                <h1>Mr. Meeseeks</h1>
+                <p class="btn">
+                  "Es un ser azul creado para cumplir tareas simples."
+                </p>
+              </div>
+            </div>
+            <div class="ficha-producto bottom">
+              <img src="./img/hombre pajaro.png" alt="Auto" />
+              <div style="width: 100%">
+                <h1>Hombre Pajaro</h1>
+                <p class="btn">
+                  "Mitad humano, mitad pájaro, con habilidades aéreas."
+                </p>
+              </div>
+            </div>
+            <div class="ficha-producto bottom">
+              <img src="./img/Squanchy.png" alt="Auto" />
+              <div style="width: 100%">
+                <h1>Squanchy</h1>
+                <p class="btn">
+                  "Un extraterrestre con un peculiar lenguaje y excéntrico."
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contacto" class="contacto">
+          <div class="container">
+            <div class="contact-info">
+              <h2>Contacto:</h2>
+              <p>¡Escríbeme!</p>
+              <div class="info">
+                <div class="info-item">
+                  <i class="fas fa-envelope"></i>
+                  <span>nicol.villarreal@gmail.com</span>
+                </div>
+                <div class="info-item">
+                  <i class="fas fa-phone"></i>
+                  <span>9 7342 7XXX</span>
+                </div>
+              </div>
+            </div>
+            <div class="formulario_contacto">
+              <form>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtNombre"
+                  placeholder="Nombre"
+                  required
+                />
+                <input
+                  type="email"
+                  class="form-control"
+                  id="txtEmail"
+                  placeholder="Correo Electrónico"
+                  required
+                />
+                <textarea
+                  type="text"
+                  class="form-control"
+                  id="txtMensaje"
+                  placeholder="Mensaje"
+                  required
+                ></textarea>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="footer">
+        <div>
+          <a
+            href="https://web.facebook.com/RickandMorty/?locale=es_LA&_rdc=1&_rdr"
+            target="_blank"
+          >
+            <i class="fab fa-facebook fa-lg"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/rickandmorty/?hl=es"
+            target="_blank"
+          >
+            <i class="fab fa-instagram fa-lg"></i>
+          </a>
+        </div>
+        <div>
+          <p>Todos los derechos reservados</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
